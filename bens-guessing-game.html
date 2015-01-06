@@ -1,0 +1,79 @@
+<script>
+
+//variables
+var intro = "Hi there! I'm here to test your sports knowledge. I'll ask you a question and you'll need to provide me an answer.Let's hope you paid attention in gym class! Ok, enough talking, press enter to begin."
+var correctAnswer = "Good job!\n"
+var higher = "Guess higher";
+var lower = "Guess lower";
+
+// Question variables
+var question1 = "How many bases are there in baseball?";
+var question2 = "How many backboards are there in basketball?";
+var question3 = "How many holes are there in golf?";
+var question4 = "In Union Rugby, how many players participate in a scrum?";
+var question5 = "How many players are on a Quidditch team?";
+
+var guess
+
+var answer1 = 4;
+var answer2 = 2;
+var answer3 = 18;
+var answer4 = 16;
+var answer5 = 7;
+
+// Start of executing code
+alert(intro);
+
+	while (guess != answer1) {
+		guess = prompt(question1);
+		if (guess < answer1) {
+			alert(higher);
+		}
+			else if (guess > answer1) {
+				alert(lower);
+			};
+	};
+	while (guess != answer2) {
+		guess = prompt(question2);
+		if (guess < answer2) {
+			alert(higher);
+		}
+		else if (guess > answer2) {
+			alert(lower);
+		};
+	};
+
+	while (guess != answer3) {
+		guess = prompt(question3);
+		if (guess < answer3) {
+			alert(higher);
+		}
+		else if (guess > answer3) {
+			alert(lower);
+		};
+	};
+
+		while (guess != answer4) {
+		guess = prompt(question4);
+		if (guess < answer4) {
+			alert(higher);
+		}
+		else if (guess > answer4) {
+			alert(lower);
+		};
+	};
+
+		while (guess != answer5) {
+		guess = prompt(correctAnswer + question5);
+		if (guess < answer5) {
+			alert(higher);
+		}
+		else if (guess > answer5) {
+			alert(lower);
+		};
+	};
+
+alert("Congratulations! You're a sports expert!")
+
+
+</script>
